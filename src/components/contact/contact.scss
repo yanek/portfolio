@@ -1,0 +1,99 @@
+@use '../../sass/mixins' as *;
+
+#contact {
+  .socials {
+    display: flex;
+    margin-block: 2rem;
+    justify-content: space-evenly;
+    padding: 0;
+
+    svg {
+      display: block;
+      font-size: 2rem;
+      margin-inline: auto;
+    }
+    li {
+      list-style: none;
+      line-height: 2rem;
+      text-align: center;
+    }
+    a {
+      display: inline-block;
+      // color: var(--secondary);
+    }
+  }
+
+  .recaptcha {
+    display: flex;
+    justify-content: center;
+    margin-block: 2rem;
+  }
+
+  .notif {
+    margin-block: 2rem;
+    padding: 1rem;
+    border-block-end: 4px solid var(--primary);
+    box-shadow: var(--box-shadow);
+    background-color: var(--code-background-color);
+    overflow: scroll;
+    width: 100%;
+    position: relative;
+
+    .close {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 4px;
+      text-decoration: none;
+      font-size: 0.75rem;
+      color: var(--text-color);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+
+    &-success {
+      border-block-end-color: var(--success-color);
+    }
+
+    &-success p {
+      color: var(--success-color);
+    }
+
+    &-error {
+      border-block-end-color: var(--error-color);
+    }
+
+    &-error p {
+      color: var(--error-color);
+    }
+  }
+
+  textarea {
+    height: 15rem;
+  }
+
+  @include breakpoint('md') {
+    .user_identity {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    form .button-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      button,
+      progress {
+        width: 20rem !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@use '../../sass/mixins' as *;
+
+#resume {
+  p {
+    padding-block-end: 2rem;
+    margin-block-end: 2rem;
+    border-block-end: 1px solid var(--muted-border-color);
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .signature {
+    display: none;
+  }
+
+  @include breakpoint('lg') {
+    p {
+      padding-block-end: 0;
+      margin-block-end: 0;
+      border-block-end: none;
+      padding-inline-end: 2rem;
+      border-inline-end: 1px solid var(--muted-border-color);
+    }
+
+    .resume-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .signature {
+      display: block;
+      margin: auto;
+      width: 80%;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    button {
+      grid-column: span 2;
+    }
+  }
+}
