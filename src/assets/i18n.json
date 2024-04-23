@@ -17,7 +17,7 @@
     "Contact_SentSuccess": "Successfully sent message! I will get back to you as soon as possible.",
     "Contact_SentError": "An error occurred while sending the message. Please check that you have correctly filled the form (and that you are not a robot... are you?), and try again.\nIf the problem persists, you can contact me directly at [noe@ksiazek.xyz](mailto:noe@ksiazek.xyz). Thank you!",
     "Resume_Title": "Who am *I*?",
-    "Resume_Whoami": "Passionate about development, currently undergoing training at [ENI École Informatique](https://www.eni-ecole.fr/), in *France*, I am a jack-of-all-trades when it comes to code, enthusiastically exploring different domains, from web to software applications, and even embedded development. In search of new horizons and stimulating challenges, I strive to push the limits of my skills to create innovative and functional digital solutions. Ready to take on *new challenges* and *collaborate on exciting projects*!",
+    "Resume_Whoami": "Passionate about development, currently undergoing training at <a href='https://www.eni-ecole.fr/' target='_blank' rel='noreferrer'>ENI École Informatique</a>, in *France*, I am a jack-of-all-trades when it comes to code, enthusiastically exploring different domains, from web to software applications, and even embedded development. In search of new horizons and stimulating challenges, I strive to push the limits of my skills to create innovative and functional digital solutions. Ready to take on *new challenges* and *collaborate on exciting projects*!",
     "Resume_Get": "Download my resume (in French)"
   },
   "fr": {
@@ -38,7 +38,7 @@
     "Contact_SentSuccess": "Message envoyé avec succès&#8239;! Je vous répondrai dès que possible.",
     "Contact_SentError": "Une erreur s'est produite lors de l'envoi du message. Merci de vérifier que vous avez correctement rempli le formulaire (et que vous n'êtes pas un robot... vous n'en êtes pas un, si&#8239;?) et de réessayer.\nSi le problème persiste, vous pouvez me contacter directement à [noe@ksiazek.xyz](mailto:noe@ksiazek.xyz). Merci&#8239;!",
     "Resume_Title": "Qui suis-*je*&#8239;?",
-    "Resume_Whoami": "Passionné de développement, en cours de formation à l'[ENI École Informatique](https://www.eni-ecole.fr/), je suis un touche-à-tout du code, explorant avec enthousiasme différents domaines, du web aux applications logicielles, en passant par le développement embarqué. À la recherche de nouveaux horizons et de défis stimulants, je m'efforce de repousser les limites de mes compétences pour créer des solutions numériques innovantes et fonctionnelles. Prêt à relever de *nouveaux défis* et à *collaborer sur des projets passionnants*&#8239;!",
+    "Resume_Whoami": "Passionné de développement, en cours de formation à l'<a href='https://www.eni-ecole.fr/' target='_blank' rel='noreferrer'>ENI École Informatique</a>, je suis un touche-à-tout du code, explorant avec enthousiasme différents domaines, du web aux applications logicielles, en passant par le développement embarqué. À la recherche de nouveaux horizons et de défis stimulants, je m'efforce de repousser les limites de mes compétences pour créer des solutions numériques innovantes et fonctionnelles. Prêt à relever de *nouveaux défis* et à *collaborer sur des projets passionnants*&#8239;!",
     "Resume_Get": "Télécharger mon CV"
   }
 }
