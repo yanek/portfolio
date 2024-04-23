@@ -1,0 +1,22 @@
+@use 'sass:map';
+
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1280px,
+  'xxl': 1536px,
+);
+
+@mixin breakpoint($name) {
+  @media screen and (min-width: map.get($breakpoints, $name)) {
+    @content;
+  }
+}
+
+@mixin gradient-text($start-color, $end-color) {
+  background: linear-gradient(45deg, $start-color 0, $end-color 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

@@ -1,0 +1,32 @@
+@use '../../sass/mixins' as *;
+
+#skills {
+  .skillset-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+
+    &:has(.skill:hover) .skill:not(:hover):not(:active),
+    &:has(.skill:active) .skill:not(:hover):not(:active) {
+      transition: filter 200ms ease-in-out;
+      filter: opacity(0.75) saturate(0);
+    }
+  }
+
+  @include breakpoint('md') {
+    .skillset-grid {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
+  @include breakpoint('lg') {
+    .skillset-grid {
+      display: flex;
+      justify-content: center;
+
+      .skill {
+        width: 4rem;
+      }
+    }
+  }
+}

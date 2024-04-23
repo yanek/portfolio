@@ -1,0 +1,31 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+  color: var(--contrast);
+}
+
+em {
+  font-style: normal;
+  color: var(--primary);
+}
+
+h2 {
+  position: relative;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: -0.1rem;
+  //   text-transform: loqw;
+  margin-inline-start: 2rem;
+  margin-block-end: 1.5rem;
+  text-wrap: pretty;
+  &::before {
+    position: absolute;
+    left: -2rem;
+    content: '#';
+    color: var(--secondary);
+  }
+}

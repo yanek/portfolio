@@ -1,0 +1,96 @@
+@use '../../sass/mixins' as *;
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    text-wrap: pretty;
+    background-color: var(--background-color);
+
+    * {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1rem;
+      margin-block: 8px;
+      color: var(--secondary);
+    }
+
+    h1 {
+      margin-block-start: 4px;
+      font-style: normal;
+      font-size: 3rem;
+      line-height: 3rem;
+      letter-spacing: -0.3rem;
+      text-transform: lowercase;
+      color: var(--primary);
+
+      @include gradient-text(var(--primary), var(--primary-hover));
+
+      &::after {
+        content: '_';
+        display: inline-block;
+        padding-inline-start: 8px;
+        color: var(--primary-underline);
+        animation: blink 1s infinite;
+      }
+    }
+    em {
+      font-style: normal;
+      color: var(--contrast);
+    }
+  }
+
+  .down-arrow {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 2rem;
+    color: var(--primary);
+    animation: bounce 500ms infinite ease-in-out;
+    animation-direction: alternate;
+    transition: color 200ms ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      color: var(--primary-hover);
+      animation-play-state: paused;
+    }
+  }
+
+  .locale-selector {
+    position: absolute;
+    // border-radius: 1rem;
+    top: 0;
+    right: 0;
+    padding: 8px;
+    background-color: var(--background-color);
+
+    img {
+      width: 48px;
+      border-radius: 4px;
+    }
+  }
+
+  .code-background {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    text-align: justify;
+    overflow: hidden;
+    line-height: 1rem;
+    color: var(--muted-color);
+    opacity: 0.3;
+  }
+}
