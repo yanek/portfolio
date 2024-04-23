@@ -1,11 +1,11 @@
 import LocalizedText from '../LocalizedText';
 import { useId } from 'react';
-import resumeFile from '../../assets/resume.pdf';
 import signature from '../../assets/signature.svg';
 import './resume.scss';
 
-function Contact() {
+function Resume() {
   const titleId = useId();
+  const resumeUrl = 'https://drive.google.com/file/d/1-MSMnA3453SBtk9dtlKAu3Rh0AM-Xu_u/view';
 
   return (
     <section id="resume" aria-labelledby={titleId} className="section-alt-color">
@@ -21,7 +21,7 @@ function Contact() {
           </p>
 
           <img className="signature" src={signature} alt="" />
-          <button onClick={() => window.open(resumeFile, '_blank')}>
+          <button onClick={() => window.open(resumeUrl, '_blank')}>
             <LocalizedText id={titleId} textId="Resume_Get" />
           </button>
         </div>
@@ -30,4 +30,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Resume;
