@@ -24,8 +24,8 @@ function ContactForm() {
     setBusy(true);
 
     emailJs
-      .sendForm('service_v47jfvb', 'template_5lv6au9', form.current, {
-        publicKey: 'fS7lM4E0T1usqtrpx',
+      .sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_EMAIL_TEMPLATE_ID, form.current, {
+        publicKey: process.env.REACT_APP_EMAIL_API_KEY,
       })
       .then(() => {
         setToast(

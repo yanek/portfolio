@@ -1,7 +1,6 @@
 import { useId } from 'react';
 import LocalizedText from '../LocalizedText';
 import SocialMedia from './SocialMedia';
-import ContactForm from './ContactForm';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import './contact.scss';
 
@@ -19,6 +18,7 @@ function Contact() {
         <p>
           <LocalizedText textId="Contact_Content" />
         </p>
+        <hr />
         <ul className="socials">
           <li>
             <SocialMedia name="in/noe-ksiazek" url="https://www.linkedin.com/in/noe-ksiazek/" icon={faLinkedin} />
@@ -27,8 +27,7 @@ function Contact() {
             <SocialMedia name="@yanek" url="https://github.com/yanek" icon={faGithub} />
           </li>
         </ul>
-        <hr />
-        <ContactForm />
+        {/* <ContactForm /> */}
       </div>
     </section>
   );
