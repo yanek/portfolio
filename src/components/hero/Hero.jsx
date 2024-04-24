@@ -5,9 +5,6 @@ import HeroLocaleSelector from "./HeroLocaleSelector";
 import HeroBackground from "./HeroBackground";
 import LocalizedText from "../LocalizedText.tsx";
 
-export const BG_TEXT_URI =
-  "https://unpkg.com/react@16/umd/react.development.js";
-
 function Hero() {
   return (
     <header id="hero">
