@@ -1,11 +1,11 @@
-import { useId } from "react";
+import { ReactElement, useId } from "react";
 import LocalizedText from "../LocalizedText.tsx";
-import SocialMedia from "./SocialMedia";
+import SocialMedia from "./SocialMedia.tsx";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./contact.scss";
 
-function Contact() {
-  const titleId = useId();
+function Contact(): ReactElement {
+  const titleId: string = useId();
 
   return (
     <section

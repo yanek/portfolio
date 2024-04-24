@@ -1,33 +1,33 @@
-import { useContext, useRef, useState } from "react";
-import Input from "./Input.jsx";
-import { LocaleState } from "../App.tsx";
+import { FormEvent, MouseEvent, ReactElement, useRef, useState } from "react";
+import Input from "./Input.tsx";
 import emailJs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
-import SubmitButton from "./SubmitButton.jsx";
+import SubmitButton from "./SubmitButton.tsx";
 import LocalizedText from "../LocalizedText.tsx";
-import Notification from "./Notification.jsx";
+import Notification from "./Notification.tsx";
+import { useLocaleContext } from "../../Hooks.tsx";
 
-function ContactForm() {
-  const l = useContext(LocaleContext).locale;
+function ContactForm(): ReactElement {
+  const l = useLocaleContext().locale;
   const captchaRef = useRef(null);
-  const form = useRef();
+  const form = useRef<HTMLFormElement | null>(null);
   const [isBusy, setBusy] = useState(false);
-  const [toast, setToast] = useState(null);
+  const [toast, setToast] = useState<ReactElement | null>(null);
 
-  const handleCloseNotification = (e) => {
+  const handleCloseNotification = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     setToast(null);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setBusy(true);
 
     emailJs
       .sendForm(
-        process.env.REACT_APP_EMAIL_SERVICE_ID,
-        process.env.REACT_APP_EMAIL_TEMPLATE_ID,
-        form.current,
+        process.env.REACT_APP_EMAIL_SERVICE_ID ?? "",
+        process.env.REACT_APP_EMAIL_TEMPLATE_ID ?? "",
+        form.current!,
         {
           publicKey: process.env.REACT_APP_EMAIL_API_KEY,
         },
@@ -38,7 +38,7 @@ function ContactForm() {
             <LocalizedText textId="Contact_SentSuccess" />
           </Notification>,
         );
-        form.current.reset();
+        form.current!.reset();
       })
       .catch(() => {
         setToast(
