@@ -1,7 +1,7 @@
 import React, { createContext } from "react";
-import i18n from "./assets/i18n.json";
-import en from "./assets/en.svg";
-import fr from "./assets/fr.svg";
+import i18n from "../assets/i18n.json";
+import en from "../assets/en.svg";
+import fr from "../assets/fr.svg";
 
 export interface LocaleState {
   locale: Locale;

@@ -4,7 +4,7 @@ import Contact from "./contact/Contact.tsx";
 import Skills from "./skills/Skills.tsx";
 import Resume from "./resume/Resume.tsx";
 import LocalizedText from "./LocalizedText.tsx";
-import { LocaleContext, LocaleState, Locale } from "../LocaleContext.tsx";
+import { LocaleContext, LocaleState, Locale } from "./LocaleContext.tsx";
 
 function App() {
   const defaultLocaleState: LocaleState = {

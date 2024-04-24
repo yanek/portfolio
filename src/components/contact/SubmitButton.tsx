@@ -1,6 +1,6 @@
-import { useLocaleContext } from "../../Hooks.tsx";
+import { useLocaleContext } from "../Hooks.tsx";
 import { ReactElement } from "react";
-import { Locale } from "../../LocaleContext.tsx";
+import { Locale } from "../LocaleContext.tsx";
 
 interface Props {
   isBusy: boolean;

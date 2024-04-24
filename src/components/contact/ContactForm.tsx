@@ -5,7 +5,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import SubmitButton from "./SubmitButton.tsx";
 import LocalizedText from "../LocalizedText.tsx";
 import Notification from "./Notification.tsx";
-import { useLocaleContext } from "../../Hooks.tsx";
+import { useLocaleContext } from "../Hooks.tsx";
 
 function ContactForm(): ReactElement {
   const l = useLocaleContext().locale;

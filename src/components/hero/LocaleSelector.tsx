@@ -1,4 +1,4 @@
-import { useToggleLocale } from "../../Hooks.tsx";
+import { useToggleLocale } from "../Hooks.tsx";
 import { ReactElement } from "react";
 
 function LocaleSelector(): ReactElement {

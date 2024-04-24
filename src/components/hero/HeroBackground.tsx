@@ -1,4 +1,4 @@
-import { useWindowDimensions, WindowDimensions } from "../../Hooks.tsx";
+import { useWindowDimensions, WindowDimensions } from "../Hooks.tsx";
 import { ReactElement } from "react";
 
 function HeroBackground(): ReactElement {
