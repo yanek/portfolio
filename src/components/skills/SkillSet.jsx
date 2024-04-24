@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import LocalizedText from '../LocalizedText';
+import PropTypes from "prop-types";
+import LocalizedText from "../LocalizedText.tsx";
 
 SkillSet.propTypes = {
   titleTextId: PropTypes.string.isRequired,

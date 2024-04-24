@@ -1,8 +1,8 @@
-import { useId } from 'react';
-import LocalizedText from '../LocalizedText';
-import SkillSet from './SkillSet';
-import SkillTables from './tables';
-import './skills.scss';
+import { useId } from "react";
+import LocalizedText from "../LocalizedText.tsx";
+import SkillSet from "./SkillSet";
+import SkillTables from "./tables";
+import "./skills.scss";
 
 function Skills() {
   const titleId = useId();
@@ -16,9 +16,18 @@ function Skills() {
           </h2>
         </header>
 
-        <SkillSet titleTextId="Skills_Category_Languages" skills={SkillTables.languages} />
-        <SkillSet titleTextId="Skills_Category_Libraries" skills={SkillTables.libs} />
-        <SkillSet titleTextId="Skills_Category_Other" skills={SkillTables.other} />
+        <SkillSet
+          titleTextId="Skills_Category_Languages"
+          skills={SkillTables.languages}
+        />
+        <SkillSet
+          titleTextId="Skills_Category_Libraries"
+          skills={SkillTables.libs}
+        />
+        <SkillSet
+          titleTextId="Skills_Category_Other"
+          skills={SkillTables.other}
+        />
       </div>
     </section>
   );

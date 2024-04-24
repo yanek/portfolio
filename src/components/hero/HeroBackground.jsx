@@ -1,4 +1,4 @@
-import { useWindowDimensions } from '../hooks';
+import { useWindowDimensions } from "../../Hooks.tsx";
 
 /**
  * @returns {ReactElement}
@@ -7,7 +7,7 @@ function HeroBackground() {
   const { width, height } = useWindowDimensions();
   const length = (width / 12) * (height / 12);
 
-  let text = '';
+  let text = "";
   for (let i = 0; i < length; i++) {
     text += String.fromCharCode(97 + Math.floor(Math.random() * 26));
   }

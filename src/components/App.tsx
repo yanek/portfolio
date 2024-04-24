@@ -1,18 +1,18 @@
-import { createContext, useEffect, useState } from 'react';
-import Hero from './hero/Hero';
-import { LocaleData } from '../locale';
-import Contact from './contact/Contact';
-import Skills from './skills/Skills';
-import Resume from './resume/Resume';
-import LocalizedText from './LocalizedText';
-
-export const LocaleContext = createContext({
-  locale: LocaleData.current(),
-  setLocale: () => {},
-});
+import { useEffect, useState } from "react";
+import Hero from "./hero/Hero";
+import Contact from "./contact/Contact";
+import Skills from "./skills/Skills";
+import Resume from "./resume/Resume";
+import LocalizedText from "./LocalizedText.tsx";
+import { LocaleContext, LocaleState, Locale } from "../LocaleContext.tsx";
 
 function App() {
-  const [locale, setLocale] = useState(LocaleData.current());
+  const defaultLocaleState: LocaleState = {
+    locale: Locale.current(),
+    setLocale: () => {},
+  };
+  const [locale, setLocale] = useState<Locale>(defaultLocaleState.locale);
+
   useEffect(() => {
     locale.applyToHtmlLang();
   }, [locale]);

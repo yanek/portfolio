@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
-import { useContext } from 'react';
-import { LocaleContext } from '../App.jsx';
+import PropTypes from "prop-types";
+import { useContext } from "react";
+import { LocaleState } from "../App.tsx";
 
 SubmitButton.propTypes = {
   isBusy: PropTypes.bool.isRequired,
@@ -12,7 +12,7 @@ function SubmitButton({ isBusy }) {
 
   return (
     <div className="button-wrapper">
-      <button type="submit">{l.getText('Contact_Send')}</button>
+      <button type="submit">{l.getText("Contact_Send")}</button>
       {progress}
     </div>
   );

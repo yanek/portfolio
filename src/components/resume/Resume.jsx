@@ -1,14 +1,19 @@
-import LocalizedText from '../LocalizedText';
-import { useId } from 'react';
-import signature from '../../assets/signature.svg';
-import './resume.scss';
+import LocalizedText from "../LocalizedText.tsx";
+import { useId } from "react";
+import signature from "../../assets/signature.svg";
+import "./resume.scss";
 
 function Resume() {
   const titleId = useId();
-  const resumeUrl = 'https://drive.google.com/file/d/1-MSMnA3453SBtk9dtlKAu3Rh0AM-Xu_u/view';
+  const resumeUrl =
+    "https://drive.google.com/file/d/1-MSMnA3453SBtk9dtlKAu3Rh0AM-Xu_u/view";
 
   return (
-    <section id="resume" aria-labelledby={titleId} className="section-alt-color">
+    <section
+      id="resume"
+      aria-labelledby={titleId}
+      className="section-alt-color"
+    >
       <div className="section-content">
         <header>
           <h2 id={titleId}>
@@ -21,7 +26,7 @@ function Resume() {
           </p>
 
           <img className="signature" src={signature} alt="" />
-          <button onClick={() => window.open(resumeUrl, '_blank')}>
+          <button onClick={() => window.open(resumeUrl, "_blank")}>
             <LocalizedText id={titleId} textId="Resume_Get" />
           </button>
         </div>

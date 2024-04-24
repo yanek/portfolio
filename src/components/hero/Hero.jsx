@@ -1,11 +1,12 @@
-import './hero.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import HeroLocaleSelector from './HeroLocaleSelector';
-import HeroBackground from './HeroBackground';
-import LocalizedText from '../LocalizedText';
+import "./hero.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import HeroLocaleSelector from "./HeroLocaleSelector";
+import HeroBackground from "./HeroBackground";
+import LocalizedText from "../LocalizedText.tsx";
 
-export const BG_TEXT_URI = 'https://unpkg.com/react@16/umd/react.development.js';
+export const BG_TEXT_URI =
+  "https://unpkg.com/react@16/umd/react.development.js";
 
 function Hero() {
   return (
