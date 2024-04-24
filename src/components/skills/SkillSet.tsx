@@ -1,12 +1,12 @@
-import PropTypes from "prop-types";
 import LocalizedText from "../LocalizedText.tsx";
+import { ReactElement } from "react";
 
-SkillSet.propTypes = {
-  titleTextId: PropTypes.string.isRequired,
-  skills: PropTypes.array.isRequired,
-};
+interface Props {
+  titleTextId: string;
+  skills: Array<{ name: string; logo: string }>;
+}
 
-function SkillSet({ titleTextId, skills }) {
+function SkillSet({ titleTextId, skills }: Props): ReactElement {
   return (
     <div className="card">
       <h3 className="card-title">

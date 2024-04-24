@@ -1,11 +1,11 @@
-import { useId } from "react";
+import { ReactElement, useId } from "react";
 import LocalizedText from "../LocalizedText.tsx";
-import SkillSet from "./SkillSet";
-import SkillTables from "./tables";
+import SkillSet from "./SkillSet.tsx";
+import SkillIcons from "./Icons.tsx";
 import "./skills.scss";
 
-function Skills() {
-  const titleId = useId();
+function Skills(): ReactElement {
+  const titleId: string = useId();
 
   return (
     <section id="skills" aria-labelledby={titleId}>
@@ -18,15 +18,15 @@ function Skills() {
 
         <SkillSet
           titleTextId="Skills_Category_Languages"
-          skills={SkillTables.languages}
+          skills={SkillIcons.languages}
         />
         <SkillSet
           titleTextId="Skills_Category_Libraries"
-          skills={SkillTables.libs}
+          skills={SkillIcons.libs}
         />
         <SkillSet
           titleTextId="Skills_Category_Other"
-          skills={SkillTables.other}
+          skills={SkillIcons.other}
         />
       </div>
     </section>
