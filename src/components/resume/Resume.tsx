@@ -1,11 +1,11 @@
 import LocalizedText from "../LocalizedText.tsx";
-import { useId } from "react";
+import { ReactElement, useId } from "react";
 import signature from "../../assets/signature.svg";
 import "./resume.scss";
 
-function Resume() {
-  const titleId = useId();
-  const resumeUrl =
+function Resume(): ReactElement {
+  const titleId: string = useId();
+  const resumeUrl: string =
     "https://drive.google.com/file/d/1-MSMnA3453SBtk9dtlKAu3Rh0AM-Xu_u/view";
 
   return (
@@ -22,12 +22,12 @@ function Resume() {
         </header>
         <div className="resume-wrapper">
           <p>
-            <LocalizedText id={titleId} textId="Resume_Whoami" />
+            <LocalizedText textId="Resume_Whoami" />
           </p>
 
           <img className="signature" src={signature} alt="" />
           <button onClick={() => window.open(resumeUrl, "_blank")}>
-            <LocalizedText id={titleId} textId="Resume_Get" />
+            <LocalizedText textId="Resume_Get" />
           </button>
         </div>
       </div>

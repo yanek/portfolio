@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Hero from "./hero/Hero.tsx";
 import Contact from "./contact/Contact";
 import Skills from "./skills/Skills";
-import Resume from "./resume/Resume";
+import Resume from "./resume/Resume.tsx";
 import LocalizedText from "./LocalizedText.tsx";
 import { LocaleContext, LocaleState, Locale } from "../LocaleContext.tsx";
 
