@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { Locale, LocaleContext, LocaleState } from "./LocaleContext.tsx";
 
-interface WindowDimensions {
+export interface WindowDimensions {
   width: number;
   height: number;
 }

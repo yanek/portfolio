@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Hero from "./hero/Hero";
+import Hero from "./hero/Hero.tsx";
 import Contact from "./contact/Contact";
 import Skills from "./skills/Skills";
 import Resume from "./resume/Resume";

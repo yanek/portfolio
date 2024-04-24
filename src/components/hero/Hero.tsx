@@ -1,14 +1,15 @@
 import "./hero.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import HeroLocaleSelector from "./HeroLocaleSelector";
-import HeroBackground from "./HeroBackground";
+import LocaleSelector from "./LocaleSelector.tsx";
+import HeroBackground from "./HeroBackground.tsx";
 import LocalizedText from "../LocalizedText.tsx";
+import { ReactElement } from "react";
 
-function Hero() {
+function Hero(): ReactElement {
   return (
     <header id="hero">
-      <HeroLocaleSelector />
+      <LocaleSelector />
       <HeroBackground />
       <div className="content">
         <p>

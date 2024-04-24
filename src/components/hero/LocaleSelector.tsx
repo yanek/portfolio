@@ -1,6 +1,7 @@
 import { useToggleLocale } from "../../Hooks.tsx";
+import { ReactElement } from "react";
 
-function HeroLocaleSelector() {
+function LocaleSelector(): ReactElement {
   const [targetLocale, toggleLocale] = useToggleLocale();
 
   return (
@@ -15,4 +16,4 @@ function HeroLocaleSelector() {
   );
 }
 
-export default HeroLocaleSelector;
+export default LocaleSelector;
