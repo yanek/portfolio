@@ -1,16 +1,15 @@
-import './hero.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import HeroLocaleSelector from './HeroLocaleSelector';
-import HeroBackground from './HeroBackground';
-import LocalizedText from '../LocalizedText';
+import "./hero.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import LocaleSelector from "./LocaleSelector.tsx";
+import HeroBackground from "./HeroBackground.tsx";
+import LocalizedText from "../LocalizedText.tsx";
+import { ReactElement } from "react";
 
-export const BG_TEXT_URI = 'https://unpkg.com/react@16/umd/react.development.js';
-
-function Hero() {
+function Hero(): ReactElement {
   return (
     <header id="hero">
-      <HeroLocaleSelector />
+      <LocaleSelector />
       <HeroBackground />
       <div className="content">
         <p>

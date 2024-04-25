@@ -1,6 +1,6 @@
 {
   "en": {
-    "BackToTop": "Back to top",
+    "Footer_BackToTop": "Back to top",
     "Hero_SwitchLocale": "Switch to English",
     "Hero_TitleStart": "Hi! My name is",
     "Hero_TitleEnd": "and I am a *full-stack developper* working from *Lyon, France*.",
@@ -21,7 +21,7 @@
     "Resume_Get": "Download my resume (in French)"
   },
   "fr": {
-    "BackToTop": "Retour en haut",
+    "Footer_BackToTop": "Retour en haut",
     "Hero_SwitchLocale": "Passer en français",
     "Hero_TitleStart": "Bonjour&#8239;! Je m'appelle",
     "Hero_TitleEnd": "et je suis un *développeur full-stack* basé à *Lyon*.",
