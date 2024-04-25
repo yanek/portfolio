@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
+import { LocaleContext, LocaleState, Locale } from "./LocaleContext.tsx";
 import Hero from "./hero/Hero.tsx";
 import Contact from "./contact/Contact.tsx";
 import Skills from "./skills/Skills.tsx";
 import Resume from "./resume/Resume.tsx";
-import LocalizedText from "./LocalizedText.tsx";
-import { LocaleContext, LocaleState, Locale } from "./LocaleContext.tsx";
+import Footer from "./Footer.tsx";
 
 function App() {
   const defaultLocaleState: LocaleState = {
@@ -26,15 +26,7 @@ function App() {
         {/* Projects go here */}
         <Contact />
       </main>
-      <footer>
-        <p>
-          <a href="#top">
-            <LocalizedText textId="BackToTop" />
-          </a>
-          <br />
-          &copy; {new Date().getFullYear()} Noé Ksiazek
-        </p>
-      </footer>
+      <Footer />
     </LocaleContext.Provider>
   );
 }
