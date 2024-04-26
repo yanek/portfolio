@@ -7,7 +7,11 @@
   align-items: center;
   height: 100svh;
 
-  .content {
+  .wrapper {
+    width: min(40rem, 100%);
+  }
+
+  .hero-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,6 +46,7 @@
         animation: blink 1s infinite;
       }
     }
+
     em {
       font-style: normal;
       color: var(--contrast);
@@ -74,6 +79,34 @@
     img {
       width: 48px;
       border-radius: 4px;
+    }
+  }
+
+  .information-banner {
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    margin-block: 1rem;
+    color: var(--success-color);
+    background-color: var(--background-color);
+    text-wrap: balance;
+    text-align: center;
+
+    em, a {
+      color: var(--success-color);
+      font-weight: 700;
+      text-decoration-color: var(--success-color);
+    }
+
+    &::before {
+      content: '/*';
+      margin-inline-end: 8px;
+      opacity: 60%;
+    }
+
+    &::after {
+      content: '*/';
+      margin-inline-start: 8px;
+      opacity: 60%;
     }
   }
 
