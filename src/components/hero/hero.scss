@@ -16,7 +16,6 @@
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
-    background-color: var(--background-color);
 
     * {
       margin: 0;
@@ -53,6 +52,12 @@
     }
   }
 
+  .hero-title,
+  .information-banner {
+    background-color: color-mix(in srgb, var(--background-color), transparent 30%);
+    backdrop-filter: blur(2px);
+  }
+
   .down-arrow {
     position: absolute;
     bottom: 1rem;
@@ -87,11 +92,11 @@
     padding-block: 1rem;
     margin-block: 1rem;
     color: var(--success-color);
-    background-color: var(--background-color);
     text-wrap: balance;
     text-align: center;
 
-    em, a {
+    em,
+    a {
       color: var(--success-color);
       font-weight: 700;
       text-decoration-color: var(--success-color);
