@@ -14,9 +14,9 @@ function Banner({ lang }: Props): ReactElement | null {
 
   return (
     <div className="information-banner">
-      Actuellement à la recherche d&apos;un stage du{" "}
-      <em>05&nbsp;septembre&nbsp;2024</em> au <em>25&nbsp;octobre&nbsp;2024</em>{" "}
-      (8 semaines).
+      Actuellement à la recherche d&apos;un{" "}
+      <em>contrat de professionnalisation</em> à partir du mois de{" "}
+      <em>janvier 2025</em>.
       <br />
       N&apos;hésitez-pas à <a href="#contact">me contacter</a> !
     </div>

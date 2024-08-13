@@ -8,6 +8,7 @@ import html from "../../assets/techs/html.svg";
 import java from "../../assets/techs/java.svg";
 import jetbrains from "../../assets/techs/jetbrains.svg";
 import js from "../../assets/techs/js.svg";
+import laravel from "../../assets/techs/laravel.svg";
 import node from "../../assets/techs/node.svg";
 import php from "../../assets/techs/php.svg";
 import react from "../../assets/techs/react.svg";
@@ -35,6 +36,7 @@ export default {
   libs: [
     { name: "Spring", logo: spring },
     { name: "Symfony", logo: symfony },
+    { name: "Laravel", logo: laravel },
     { name: "Angular", logo: angular },
     { name: "React", logo: react },
     { name: "Node.js", logo: node },
