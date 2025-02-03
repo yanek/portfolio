@@ -14,9 +14,7 @@ function Banner({ lang }: Props): ReactElement | null {
 
   return (
     <div className="information-banner">
-      Actuellement à la recherche d&apos;un{" "}
-      <em>contrat de professionnalisation</em> à partir du mois de{" "}
-      <em>janvier 2025</em>.
+      Disponible de suite pour un contrat de professionnalisation en alternance de 12 mois.
       <br />
       N&apos;hésitez-pas à <a href="#contact">me contacter</a> !
     </div>
