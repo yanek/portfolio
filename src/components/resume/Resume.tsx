@@ -6,7 +6,7 @@ import "./resume.scss";
 function Resume(): ReactElement {
   const titleId: string = useId();
   const resumeUrl: string =
-    "https://drive.google.com/file/d/1-MSMnA3453SBtk9dtlKAu3Rh0AM-Xu_u/view";
+    "https://drive.google.com/file/d/1cMsjvoHdSNQb02d1gMESSE8gvmswCKZv/view?usp=drive_link"
 
   return (
     <section
